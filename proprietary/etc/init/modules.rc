@@ -1,0 +1,9 @@
+on boot
+    insmod /vendor/lib/modules/wmt_drv.ko
+
+on property:vendor.connsys.driver.ready=yes
+    insmod /vendor/lib/modules/bt_drv.ko
+    insmod /vendor/lib/modules/gps_drv.ko
+    insmod /vendor/lib/modules/wmt_chrdev_wifi.ko
+    insmod /vendor/lib/modules/wlan_drv_gen2.ko
+    start wlan_assistant
