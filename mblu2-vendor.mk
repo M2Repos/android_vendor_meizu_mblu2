@@ -3,4 +3,4 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/meizu/mblu2/x32,ven
 else
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/meizu/mblu2/x64,vendor)
 endif
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/meizu/mblu2/proprietary,vendor)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/meizu/mblu2/common,vendor)
